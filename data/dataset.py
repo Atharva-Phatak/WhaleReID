@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 
 
-class WhaleDataset(torch.nn.Module):
+class WhaleDataset(torch.utils.data.Dataset):
     def __init__(self, params, df, transforms, stage):
         self.path = params.path
         self.stage = stage
